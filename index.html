@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Menu encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="" style="text-decoration: none;" >Ivan</a> <!--lo agregue aca por que no me lo toma en el css -->
+            </div>
+            <nav id="nav" class="">
+                <ul>
+                    <li><a href="index.html" onclick="seleccionar()" >Inicio</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()"">sobre mi</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar()" >habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()" >curriculun</a></li>
+                    <li><a href="#" onclick="seleccionar()" >portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()" >contacto</a></li>
+                    
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- seccion inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/yo.jpg" alt="mi foto">
+            </div>
+            <h1>Ivan Riquelme</h1>
+            <h2>Analista Programador</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- seccion sobre mi -->
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola,soy Ivan</span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt 
+            tempora modi dolor consectetur mollitia repellat, adipisci, recusandae exercitationem, beatae officiis 
+            natus reprehenderit laboriosam unde atque dolorem maxime amet facere!</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="columna">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            26-05-1996
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            3794092923
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            xfxivan@gmail.com
+                        </li>
+                        <li>
+                            <strong>Github</strong>
+                            https://github.com/
+                        </li>
+                    </ul>
+                </div>
+                <!-- Intereces -->
+                <div class="columna">
+                    <h3>Intereces</h3>
+                    <div class="contenedor-intereces">
+                        <div class="intereces">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="intereces">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="intereces">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="intereces">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>GYM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    <!-- ceccion habilidades -->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- habilidades tecnicas -->
+                <div class="col">
+                    <h3>habilidades tecnicas</h3>
+                    <div class="habilidades">
+                        <span>Javascript</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso javascript">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>htm & css</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso htmlcss">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>php</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso php">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Phytom</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso phytom">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>C++</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso c">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>SQL</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso sql">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- habilidades Profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profecionales</h3>
+                    <div class="habilidades">
+                        <span>Comunicacion</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso Comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso trabajoEquipo">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Creatividad</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades">
+                        <span>Dedicacion</span>
+                        <div class="barra-habilidad">
+                            <div class="progreso dedicacion">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>Herramientas que utilizo</h2>
+            <br><br><br>
+            <div class="container-buttons">
+                <a href="#" class=""><i class="fab fa-html5"></i></a>
+                <a href="#" class=""><i class="fa-brands fa-php"></i></a>
+                <a href="#" class=""><i class="fab fa-css3-alt"></i></a>
+                <a href="#" class=""><i class="fab fa-bootstrap"></i></a>
+                <a href="#" class=""><i class="fab fa-js"></i></a>   
+                <a href="#" class=""><i class="fab fa-laravel"></i></a>
+              </div>
+        </div>
+    </section>
+
+    <!-- seccion curriculun -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <h2>Educación</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    
+                    <div class="item izq">
+                        <h4>Desarrollo Web (orientado a comercio electrónico 1)</h4>
+                        <span class="casa">Universidad Nacional del Nordeste)</span>
+                        <span class="fecha">2021</span>
+                        <p>	Introducción a conceptos de desarrollo Web Front-end.
+                            	Introducción a base de datos.
+                            	Introducción a conceptos de desarrollo Back-end, php y diseño MVC.
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Base de Datos</h4>
+                        <span class="casa">Universidad Nacional del Nordeste</span>
+                        <span class="fecha">2022</span>
+                        <p> 	Modelado Relacional y normalización
+                            Bases de Datos Relacionales
+                            <br>
+                            Desarrollo de Bases de Datos 
+                            </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programación Front-end</h4>
+                        <span class="casa">Argentina Programa 4.0
+                        <span class="fecha">2023</span>
+                        <p>En curso</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    
+                    <div class="item der">
+                        <h4>Desarrollo Web (orientado a comercio electrónico 2) </h4>
+                        <span class="casa">Facultad de Ciencias Exactas</span>
+                        <span class="fecha">2021</span>
+                        <p>
+                            	Gestión de alojamiento web.
+                            	Comercio electrónico orientado al desarrollo de software
+                            	Despliegue de tienda Online.
+                            
+                            </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Taller Python</h4>
+                        <span class="casa">Universidad Nacional del Nordeste</span>
+                        <span class="fecha">2022</span>
+                        <p>introduccion a phyton</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seccion portfolio -->
+    <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Diseño Creativo</h3>
+                            <p>Fotografía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- seccion contacto -->
+    <section id="contacto" class="contacto">
+        <div class="seccion-contacto">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- columna -->
+                <div class="columna">
+                    <form action="https://formsubmit.co/xfxivan@gmail.com" method="post">
+                    <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                    <input type="number" name="tel" placeholder="Numero de telefono">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="motivo" placeholder="Motivo">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    </form>
+                </div>
+                <div class="columna">
+                    <img src="img/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                calle falsa 123
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                3794928237
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                xfxivan@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer bootstrap 5.2 -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa-brands fa-facebook"></i></a>
+            </a>
+      
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa-brands fa-linkedin"></i>
+            </a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fa-brands fa-github"></i>
+            </a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        </div>
+      </footer>
+<script src="js/funciones.js"></script>
+</body>
+
+</html>
