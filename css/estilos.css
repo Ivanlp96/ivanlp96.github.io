@@ -434,10 +434,6 @@ width: 300px;
  
   
 
-
-
-
-
 @keyframes php{ /*para que la animacion se mueva gradualmente desde y hasta. mejor copativilidadad con o hasta 100*/
     0%{width: 0%;}
     100%{width: 20%;}
@@ -790,7 +786,9 @@ width: 300px;
     margin-right: 20px;
 }
 
-@media screen and (max-width:980px){
+/*responsive*/
+
+@media screen and (max-width:700px){
     nav{
         display: none;
     }
