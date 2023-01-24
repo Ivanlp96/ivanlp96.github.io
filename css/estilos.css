@@ -7,6 +7,85 @@
     padding: 0;
 }
 
+[data-theme="ligth"]{
+    --primary: #d8d2da;
+    --background:linear-gradient(to top,rgba(216, 219, 221, 0.8),rgb(116, 193, 238));
+    --text: #000;
+    --nav: #7a148b;
+    --logo :#356ed8;
+    --boton :#ffa502;
+    --shadow: #345e9c;
+}
+
+[data-theme="dark"]{
+    --primary: #d8d2da;
+    --background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1));
+    --text: #fff;
+    --nav: #1e181f;
+    --logo :#ffa502;
+    --boton :#7a148b;
+    --shadow: #d35400;
+}
+
+.contenedor-header .switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+.contenedor-header .switch input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+}
+
+.contenedor-header .switch .slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--boton);
+    /*background-color: var(--background);*/
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.contenedor-header .switch .slider::before{
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--primary);
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 50%;
+}
+
+.contenedor-header .switch input:checked + .slider::before{
+    background-color: var(--logo);
+}
+
+.contenedor-header .switch input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+
+
+
+
+
+
+
+
 html{
     /*desliza cuando hago clic en los link del menu 
     smooth se desplaza suavemente
@@ -18,7 +97,7 @@ html{
 /*Menu*/
 
 .contenedor-header{
-    background: #1e181f;
+    background: var(--nav);
     position: fixed; /*permanece en el mismo lugar, incluso si se desplaza la página*/
     width: 100%;
     top: 0;
@@ -38,8 +117,8 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Work Sans';
     font-size: 36px;
-    color: #ffa502;
-    text-shadow: 0 0 15px #d35400;
+    color: var(--logo);
+    text-shadow: 0 0 15px var(--shadow);
 }
 
 .contenedor-header header ul{
@@ -49,7 +128,7 @@ html{
 
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: var(--text);
     margin: 0 15px;
     padding: 1px;
     transition: .5s; /*permiten cambiar los valores de propiedad sin problemas, durante un período determinado.*/
@@ -57,8 +136,8 @@ html{
 }
 
 .contenedor-header header nav ul li a:hover{ /*aplique estilo a un enlace cuando pase el mouse sobre é*/
-    color: #ffa502;
-    text-shadow: 0 0 15px #d35400;
+    color: var(--logo);
+    text-shadow: 0 0 15px var(--shadow);
 }
 
 .nav-responsive{
@@ -73,8 +152,8 @@ html{
 /*Seccion inicio*/
 
 .inicio{
-    background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),  /*La función linear-gradient() establece un degradado lineal como imagen de fondo.  rgba define colores utilizando el modelo rojo-verde-azul-alfa */
-    url(https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif);    
+    background: var(--background); /*La función linear-gradient() establece un degradado lineal como imagen de fondo.  rgba define colores utilizando el modelo rojo-verde-azul-alfa */
+    /*url(https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif); para poner la imagen de fondo*/   
     background-size: cover; /*Especifique el tamaño de una imagen de fondo y cover para cubrir todo el contenedor */
     height: 100vh;
     color: #fff;
@@ -84,7 +163,7 @@ html{
 
 .inicio .contenido-banner{
     padding: 20px;
-    background-color: #1e181f;
+    background-color: var(--nav);
     max-width: 350px;
     margin: auto;
     text-align: center;
@@ -93,8 +172,8 @@ html{
 
 .inicio .contenido-banner img{
      margin-top: 40px;
-     border: 10px solid #ffa502;
-     box-shadow: 0 0 15px #d35400;
+     border: 10px solid var(--logo);
+     box-shadow: 0 0 15px var(--shadow);
      display: block;    
      width: 45%;
      margin: auto;
@@ -113,18 +192,20 @@ width: 300px;
     margin-top: 40px;
     font-size: 42px;
     font-family: 'Losa Roboto';
+    color: var(--text);
 }
 
 .inicio .contenido-banner h2{
     font-size: 15px;
     font-weight: normal;
+    color: var(--text);
 }
 
 .inicio .contenido-banner .redes a{
-    color: #fff;
+    color: var(--text);
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #fff;
+    border: 1px solid var(--text);
     border-radius: 100%;
     width: 42px;
     height: 42px;
@@ -135,9 +216,9 @@ width: 300px;
 }
 
 .inicio .contenido-banner .redes a:hover{
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
+    color: var(--logo);
+    box-shadow: 0 0 15px var(--shadow);
+    text-shadow: 0 0 15px var(--shadow);
 }
 
 /*sobre mi*/
@@ -858,6 +939,7 @@ width: 300px;
         width: 100%;
     }
 }
+
 
 
 
