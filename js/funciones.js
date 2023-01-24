@@ -32,3 +32,19 @@ function efectoHabilidades(){
         habilidades[8].classList.add("dedicacion");
     }
 }
+
+
+const preferedColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'ligth';
+const slider = document.getElementById('slider');
+
+const setTheme = (theme) =>{
+    document.documentElement.setAttribute('data-theme',theme);
+    localStorage.setItem('theme',theme);
+}
+
+slider.addEventListener('click',() =>{
+    let swichTotheme = localStorage.getItem('theme')=== 'dark' ? 'ligth' : 'dark';
+    setTheme(swichTotheme);
+});
+
+setTheme(localStorage.getItem('theme') || preferedColorScheme);
