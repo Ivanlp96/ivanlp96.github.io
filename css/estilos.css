@@ -10,18 +10,19 @@
 /*declaracion de variables para  el modo claro y oscuros*/
 
 [data-theme="ligth"]{
-    --primary: #d8d2da;
-    --background:linear-gradient(to top,rgba(216, 219, 221, 0.8),rgb(116, 193, 238));
+    --primary: #757177;
+    --background:linear-gradient(to top,rgba(213, 224, 231, 0.8),rgb(243, 225, 238));
     --text: #000;
-    --nav: #7a148b;
-    --iconos: #1c678a;;
-    --logo :#356ed8;
-    --boton :#ffa502;
-    --shadow: #345e9c;
-    --textFuerte: #356ed8;
-    --habilidadesBackgraunt: linear-gradient(to top,rgba(216, 219, 221, 0.8),rgb(116, 193, 238));
-    --habilidadBorder: #29e7ee;
-    --portfoliobackgraunt:#7a148b;
+    --nav: #8a858f;
+    --iconos: #59565a;;
+    --logo :#575355;
+    --boton :#c27c2b;
+    --shadow: #302e2f;
+    --textFuerte: #4b4749;
+    --habilidadesBackgraunt: linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
+    --habilidadBorder: #e0d7df;
+    --portfoliobackgraunt:linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
+
 }
 
 [data-theme="dark"]{
@@ -537,7 +538,7 @@ width: 300px;
 
 /*seccion curriculum*/
 .curriculum{
-    background: var(--background);
+    background: var(--nav);
     color: var(--text);
     padding: 50px 20px;
 }
@@ -845,6 +846,12 @@ width: 300px;
     background: var(--nav);
     color: var(--text);
 }
+
+
+
+
+
+
 
 
 
