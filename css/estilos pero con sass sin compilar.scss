@@ -14,7 +14,6 @@
     --background:linear-gradient(to top,rgba(213, 224, 231, 0.8),rgb(243, 225, 238));
     --text: #000;
     --nav: #8a858f;
-    --responsive:rgba(164, 187, 211, 0.267);
     --iconos: #59565a;;
     --logo :#575355;
     --boton :#c27c2b;
@@ -23,28 +22,27 @@
     --habilidadesBackgraunt: linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
     --habilidadBorder: #e0d7df;
     --portfoliobackgraunt:linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
-    --gifContacto: url(https://media.tenor.com/KG8jAWS0srYAAAAd/jackie.gif);
+
 }
 
 [data-theme="dark"]{
     --primary: #d8d2da;
-    --background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1)),url(https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif);
+    --background: linear-gradient(to top,rgba(30,35,38,.8),rgba(30,35,38,1));
     --text: #fff;
-    --responsive:black;
     --nav: #1e181f;
     --iconos: #2c212e;;
     --logo :#ffa502;
-    --boton :#686768;
+    --boton :#7a148b;
     --shadow: #d35400;
     --textFuerte:  #1CB698;
     --habilidadesBackgraunt:  #2c212e;
     --habilidadBorder: #2c212e;
     --portfoliobackgraunt: #252A2E;
-    --gifContacto: url(https://media.giphy.com/media/3o7ZerdezTT72sWC1W/giphy.gif);
 }
 /*estilos para el boton de cambio*/
-/*esta implementacion fue una modificacion de la que hice con sass de todas formas adjuntare los dos archivos*/
-.slider{
+
+
+#slider{
     background: var(--logo);
     border-radius: 1000px;
     border: none;
@@ -52,48 +50,45 @@
     cursor: pointer;
     display: flex;
     outline: none;
+    &::after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: var(--boton);
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: var(--shadow);
+    }
+    &.active{
+        color: #000;
+        &::after{
+            right: 0;
+            left: unset;
+        }
+    }
+    span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+    }
 }
 
-.slider::after{
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    background: var(--boton);
-    top: 0;
-    left: 0;
-    right: unset;
-    border-radius: 100px;
-    transition: .3s ease all;
-    box-shadow: var(--shadow);
-}
-.active{
-    color: #000;
-}
 
-.active::after{
-    right: 0;
-    left: unset;
-}
-    
-.slider span{
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
-    color: #fff;
-}
 
-.active span{
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    display: block;
-    background: none;
-    color: #fff;
-}
+
+
+
+
+
+
 
 html{
     /*desliza cuando hago clic en los link del menu 
@@ -137,7 +132,7 @@ html{
 
 .contenedor-header header nav ul li a{
     text-align: none;
-    color: #fff;
+    color: var(--text);
     margin: 0 15px;
     padding: 1px;
     transition: .5s; /*permiten cambiar los valores de propiedad sin problemas, durante un período determinado.*/
@@ -150,7 +145,7 @@ html{
 }
 
 .nav-responsive{
-    background: var(--logo);
+    background-color: #1CB698;
     color: (--text);
     padding: 5px 10px;
     border-radius: 5px;
@@ -666,11 +661,9 @@ width: 300px;
 
 /*seccion contacto*/
 .contacto{
-    background-image: var(--gifContacto);
-    color:var(--text);
+    background-image: url(https://media.giphy.com/media/3o7ZerdezTT72sWC1W/giphy.gif);
+    color: #fff;
     padding: 50px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .contacto .contenido-seccion{
@@ -709,15 +702,16 @@ width: 300px;
 .contacto button{
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid var(--logo);
+    border: 2px solid #fff;
     width: fit-content;
     display: block;
     margin: 25px auto;
     padding: 10px 20px;
     font-size: 26px;
-    color: var(--text);
+    color: #fff;
     position: relative;
     z-index: 10;
+    text-decoration: none;
 }
 
 .contacto button .overlay{

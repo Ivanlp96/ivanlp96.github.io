@@ -1,5 +1,6 @@
 
 let menuVisible = false;
+/*funcion para ocultar o mostrar el menu*/
 
 function mostrarOcultarMenu(){
     if(menuVisible){
@@ -15,7 +16,7 @@ function seleccionar(){
     document.getElementById("nav").classList="";
     menuVisible = false;
 }
-
+ /*funcion para la carga de habilidades */ 
 function efectoHabilidades(){
     var habilidades = document.getElementById("habilidades");
     var distancia_habilidad = window.innerHeight - habilidades.getBoundingClientRect().top;
@@ -41,6 +42,8 @@ const setTheme = (theme) =>{
     document.documentElement.setAttribute('data-theme',theme);
     localStorage.setItem('theme',theme);
 }
+boton();
+
 
 slider.addEventListener('click',() =>{
     let swichTotheme = localStorage.getItem('theme')=== 'dark' ? 'ligth' : 'dark';
@@ -48,3 +51,27 @@ slider.addEventListener('click',() =>{
 });
 
 setTheme(localStorage.getItem('theme') || preferedColorScheme);
+
+/*funcion que cambia el icono segun la preferencia guardada*/
+function boton(){
+    if(localStorage.getItem('theme') == 'dark'){
+        document.getElementById("slider").classList.add('active');
+        cambio = true;
+    }else{
+        document.getElementById("slider").classList.remove('active');  
+        cambio = false;
+    }
+}
+
+
+/*funcion para el cambio de icono del solo y la luna */
+
+slider.addEventListener('click',() =>{
+    if(cambio){
+        document.getElementById("slider").classList.remove('active');  
+        cambio = false
+    }else{
+        document.getElementById("slider").classList.add('active');
+        cambio = true;
+    }
+   });
