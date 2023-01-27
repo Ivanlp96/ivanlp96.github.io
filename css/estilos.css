@@ -18,8 +18,8 @@
     --iconos: #59565a;;
     --logo :#575355;
     --boton :#c27c2b;
-    --shadow: #302e2f;
-    --textFuerte: #4b4749;
+    --shadow: #f8f8f8;
+    --textFuerte: #110f10;
     --habilidadesBackgraunt: linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
     --habilidadBorder: #e0d7df;
     --portfoliobackgraunt:linear-gradient(to top,rgba(150, 141, 148, 0.8),rgb(247, 234, 245));
@@ -36,7 +36,7 @@
     --logo :#ffa502;
     --boton :#686768;
     --shadow: #d35400;
-    --textFuerte:  #1CB698;
+    --textFuerte:  #d35400;
     --habilidadesBackgraunt:  #2c212e;
     --habilidadBorder: #2c212e;
     --portfoliobackgraunt: #252A2E;
