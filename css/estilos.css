@@ -438,7 +438,7 @@ width: 300px;
 
 @keyframes javascript{ /*para que la animacion se mueva gradualmente desde y hasta. mejor copativilidadad con o hasta 100*/
     0%{width: 0%;}
-    100%{width: 40%;}
+    100%{width: 30%;}
 }
 
 .habilidades .habilidades .htmlcss{
@@ -478,7 +478,7 @@ width: 300px;
 
 @keyframes c{ /*para que la animacion se mueva gradualmente desde y hasta. mejor copativilidadad con o hasta 100*/
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 40%;}
 }
 
 .habilidades .habilidades .sql{
@@ -488,7 +488,7 @@ width: 300px;
 
 @keyframes sql{ /*para que la animacion se mueva gradualmente desde y hasta. mejor copativilidadad con o hasta 100*/
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 45%;}
 }
 
 .habilidades .habilidades .Comunicacion{
@@ -508,7 +508,7 @@ width: 300px;
 
 @keyframes trabajoEquipo{ /*para que la animacion se mueva gradualmente desde y hasta. mejor copativilidadad con o hasta 100*/
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 100%;}
 }
 
 .habilidades .habilidades .creatividad{
