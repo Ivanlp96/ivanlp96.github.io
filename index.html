@@ -10,6 +10,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Work+Sans:wght@300;400;600;800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>CV</title>
 </head>
@@ -19,20 +28,20 @@
     <div class="contenedor-header">
         <header>
             <div class="logo">
-                <a href="" style="text-decoration: none;" >Ivan</a> <!--lo agregue aca por que no me lo toma en el css -->
+                <a href="" style="text-decoration: none;">Ivan</a>
+                <!--lo agregue aca por que no me lo toma en el css -->
             </div>
-           <button id="slider" class="slider">
+            <button id="slider" class="slider">
                 <span><i class="fa-solid fa-sun"></i></span>
                 <span><i class="fa-solid fa-moon"></i></span>
-           </button>
+            </button>
             <nav id="nav" class="">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()" >Inicio</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
                     <li><a href="#sobreMi" onclick="seleccionar()"">Sobre mi</a></li>
-                    <li><a href="#habilidades" onclick="seleccionar()" >Habilidades</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()" >Curriculun</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()" >Portfolio</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()" >Contacto</a></li>
+                    <li><a href=" #habilidades" onclick="seleccionar()">Habilidades</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculun</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -47,11 +56,11 @@
                 <img src="img/yo.jpg" alt="mi foto">
             </div>
             <h1>Ivan Riquelme</h1>
-           <h2>Desarrollador de Software</h2>
+            <h2>Desarrollador de Software</h2>
             <div class="redes">
                 <a href="https://wa.me/5493794263274" target="_blank">
                     <i class="fa-brands fa-whatsapp"></i>
-            </a>
+                </a>
                 <a href="https://www.linkedin.com/in/ivan-riquelme-9674a9264/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/Ivanlp96"><i class="fa-brands fa-github"></i></a>
             </div>
@@ -61,8 +70,10 @@
     <section id="sobreMi" class="sobreMi">
         <div class="contenido-seccion">
             <h2>Sobre Mi</h2>
-            <p><span>Hola, soy Ivan.</span> Actualmente me encuentro en mi tercer año de estudio en la carrera Licenciatura en Sistemas de Información, en la facultad de Ciencias Exactas de la UNNE. 
-                Estoy arrancando con mis primeros proyectos personales y me encuentro trabajando como desarrollador hace 1 año y medio..</p>
+            <p><span>Hola, soy Ivan.</span> Actualmente me encuentro en mi cuarto año de estudio en la carrera
+                Licenciatura en Sistemas de Información, en la facultad de Ciencias Exactas de la UNNE.
+                Estoy arrancando con mis primeros proyectos personales y me encuentro trabajando como desarrollador hace
+                1 año y medio..</p>
             <div class="fila">
                 <!-- datos personales -->
                 <div class="columna">
@@ -109,115 +120,136 @@
                     </div>
                 </div>
             </div>
-        
+
         </div>
     </section>
-    <!-- ceccion habilidades -->
-    <section class="habilidades" id="habilidades">
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
         <div class="contenido-seccion">
             <h2>Habilidades</h2>
-            <div class="fila">
-                <!-- habilidades tecnicas -->
-                <div class="col">
-                    <h3>Habilidades tecnicas</h3>
-                    <div class="habilidades">
-                        <span>Javascript</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso javascript">
-                                <span>30%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Html & Css</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso htmlcss">
-                                <span>60%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>php</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso php">
-                                <span>20%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Phytom</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso phytom">
-                                <span>35%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>C++</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso c">
-                                <span>40%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Sql</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso sql">
-                                <span>45%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- habilidades Profesionales -->
-                <div class="col">
-                    <h3>Habilidades Profecionales</h3>
-                    <div class="habilidades">
-                        <span>Comunicacion</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso Comunicacion">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Trabajo en equipo</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso trabajoEquipo">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Creatividad</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso creatividad">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="habilidades">
-                        <span>Dedicacion</span>
-                        <div class="barra-habilidad">
-                            <div class="progreso dedicacion">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-             <h2>Herramientas que utilizo</h2>
-            <br><br><br>
-            <div class="container-buttons">
-            <a  class="" title="HTML5"><i class="fab fa-html5"></i></a>
-            <a class="" title="PHP"><i class="fa-brands fa-php"></i></a>
-            <a class="" title="CSS3"><i class="fab fa-css3-alt"></i></a>
-            <a class="" title="Bootstrap"><i class="fab fa-bootstrap"></i></a>
-            <a class="" title="JavaScript"><i class="fab fa-js"></i></a>   
-            <a class="" title="Laravel"><i class="fab fa-laravel"></i></a>
-            <a class="" title="SQL"><i class="fas fa-database"></i></a>
-            <a  class="" title="Livewire 3"><i class="fas fa-bolt"></i></a>
-            </div>
+          <div class="fila" style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; text-align: center;">
+  <!-- Técnicas -->
+  <div class="col">
+    <h3>Habilidades técnicas</h3>
+    <div class="habilidades">
+      <span>JavaScript</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>HTML & CSS</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>PHP</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>Python</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>C++</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>SQL</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-regular fa-star text-warning"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Profesionales -->
+  <div class="col">
+    <h3>Habilidades profesionales</h3>
+    <div class="habilidades">
+      <span>Comunicación</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>Trabajo en equipo</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>Creatividad</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+       <i class="fa-solid fa-star text-warning"></i>
+      </div>
+    </div>
+    <div class="habilidades">
+      <span>Dedicación</span>
+      <div class="habilidad-rating" style="font-size: 1.5rem; margin: 0.5rem 0;">
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+        <i class="fa-solid fa-star text-warning"></i>
+      </div>
+    </div>
+  </div>
+</div>
+            <h2>Herramientas que utilizo</h2>
+            <br>
+             <div class="container-buttons" style="text-align: center; font-size: 2rem;">
+            <a title="HTML5" style="margin: 0 0.5rem; color: #e44d26;"><i class="fab fa-html5"></i></a>
+            <a title="PHP" style="margin: 0 0.5rem; color: #6e7dbb;"><i class="fab fa-php"></i></a>
+            <a title="CSS3" style="margin: 0 0.5rem; color: #264de4;"><i class="fab fa-css3-alt"></i></a>
+            <a title="Bootstrap" style="margin: 0 0.5rem; color: #563d7c;"><i class="fab fa-bootstrap"></i></a>
+            <a title="JavaScript" style="margin: 0 0.5rem; color: #f7df1e;"><i class="fab fa-js"></i></a>
+            <a title="Laravel" style="margin: 0 0.5rem; color: #f55247;"><i class="fab fa-laravel"></i></a>
+            <a title="SQL" style="margin: 0 0.5rem; color: #00758f;"><i class="fas fa-database"></i></a>
+            <a title="Livewire 3" style="margin: 0 0.5rem; color: #9b59b6;"><i class="fas fa-bolt"></i></a>
+        </div>
         </div>
     </section>
 
@@ -227,15 +259,15 @@
             <h2>Educación</h2>
             <div class="fila">
                 <div class="col izquierda">
-                    
+
                     <div class="item izq">
                         <h4>Desarrollo Web (orientado a comercio electrónico 1)</h4>
                         <span class="casa">Universidad Nacional del Nordeste</span>
                         <span class="fecha"></span>
-                        <p>	Introducción a conceptos de desarrollo Web Front-end.
-                            	Introducción a base de datos.
-                            	Introducción a conceptos de desarrollo Back-end, php y diseño MVC.
-                            </p>
+                        <p> Introducción a conceptos de desarrollo Web Front-end.
+                            Introducción a base de datos.
+                            Introducción a conceptos de desarrollo Back-end, php y diseño MVC.
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -244,11 +276,11 @@
                         <h4>Base de Datos</h4>
                         <span class="casa">Universidad Nacional del Nordeste</span>
                         <span class="fecha"></span>
-                        <p> 	Modelado Relacional y normalización
+                        <p> Modelado Relacional y normalización
                             Bases de Datos Relacionales
                             <br>
-                            Desarrollo de Bases de Datos 
-                            </p>
+                            Desarrollo de Bases de Datos
+                        </p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
@@ -256,12 +288,12 @@
                     <div class="item izq">
                         <h4>Programación Front-end</h4>
                         <span class="casa">Argentina Programa 4.0
-                        <span class="fecha"></span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+                            <span class="fecha"></span>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
                     </div>
-                      <div class="item izq">
+                    <div class="item izq">
                         <h4>Curso de JavaScript</h4>
                         <span class="casa">Curso Particular</span>
                         <span class="fecha">2025</span>
@@ -269,24 +301,24 @@
                             Profundización en JavaScript moderno (ES6+), manejo del DOM,<br>
                             eventos, asincronía y consumo de APIs REST.
                         </p>
-                            <div class="conectori">
-                        <div class="circuloi"></div>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col derecha">
-                    
+
                     <div class="item der">
                         <h4>Desarrollo Web (orientado a comercio electrónico 2) </h4>
                         <span class="casa">Facultad de Ciencias Exactas</span>
                         <span class="fecha"></span>
                         <p>
-                            	Gestión de alojamiento web.
-                            	Comercio electrónico orientado al desarrollo de software
-                            	Despliegue de tienda Online.
-                            
-                            </p>
+                            Gestión de alojamiento web.
+                            Comercio electrónico orientado al desarrollo de software
+                            Despliegue de tienda Online.
+
+                        </p>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
@@ -309,110 +341,124 @@
                         </div>
                     </div>
                     <div class="item der">
-                    <h4>Desarrollador Web (PHP, Laravel, Livewire 3)</h4>
-                    <span class="casa">Empresa Privada</span>
-                    <span class="fecha">2024 - Actualidad</span>
-                    <p>
-                        Desarrollo de funcionalidades backend con PHP moderno usando Laravel 10 y Livewire 3.<br>
-                        Manejo de componentes dinámicos en el frontend mediante JavaScript.<br>
-                        Integración de bases de datos relacionales con SQL Server.<br>
-                        Implementación del patrón Modelo-Vista-Controlador (MVC) siguiendo buenas prácticas de desarrollo.
-                    </p>
-                    <div class="conectord">
-                        <div class="circulod"></div>
-                    </div>
+                        <h4>Desarrollador Web (PHP, Laravel, Livewire 3)</h4>
+                        <span class="casa">Empresa Privada</span>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p>
+                            Desarrollo de funcionalidades backend con PHP moderno usando Laravel 10 y Livewire 3.<br>
+                            Manejo de componentes dinámicos en el frontend mediante JavaScript.<br>
+                            Integración de bases de datos relacionales con SQL Server.<br>
+                            Implementación del patrón Modelo-Vista-Controlador (MVC) siguiendo buenas prácticas de
+                            desarrollo.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- seccion portfolio -->
-    <section id="portfolio" class="portfolio">
-            <div class="contenido-seccion">
-                <h2>Portfolio</h2>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/carrusel1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Primer Slider</h5>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/carrusel2.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Segundo Slider</h5>
-                          <p></p>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Tercer slider</h5>
-                          <p></p>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Atras</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                    </button>
-                  </div>
-            </div>
-    </section>
+    <!--
+<section id="portfolio" class="portfolio">
+  <div class="contenido-seccion">
+    <h2>Portfolio</h2>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carrusel1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Primer Slider</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrusel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Segundo Slider</h5>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Tercer slider</h5>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Atrás</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</section>
+-->
+
     <!-- seccion contacto -->
     <section id="contacto" class="contacto">
-        <STYLE>A {text-decoration: none;} </STYLE> 
+        <STYLE>
+            A {
+                text-decoration: none;
+            }
+        </STYLE>
         <div class="seccion-contacto">
             <h2>Contacto</h2>
             <a href="mailto:xfxivan@gmai.com">
-                    <button type="submit" >
-                        Enviar Correo<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </a>
+                <button type="submit">
+                    Enviar Correo<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
         </div>
     </section>
     <!-- footer bootstrap 5.2 -->
     <footer class="text-center">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
-          <!-- Section: Social media -->
-          <section class="mb-4">     
-            <a class="btn btn-outline-light btn-floating m-1"  href="https://wa.me/5493794263274" role="button"
-              >  <i class="fa-brands fa-whatsapp"></i>
-            </a>
-      
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/ivan-riquelme-9674a9264/" role="button"
-              ><i class="fa-brands fa-linkedin"></i>
-            </a>
-      
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="fa-brands fa-whatsapp" role="button"
-              ><i class="fa-brands fa-github"></i>
-            </a>
-          </section>
-          <!-- Section: Social media -->
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://wa.me/5493794263274" role="button"> <i
+                        class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/ivan-riquelme-9674a9264/" role="button"><i
+                        class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="fa-brands fa-whatsapp" role="button"><i
+                        class="fa-brands fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
         </div>
         <!-- Grid container -->
-      
+
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         </div>
-      </footer>
-<script src="js/funciones.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+        <div class="text-center p-3">© 2025 Iván Riquelme</div>
+    </footer>
+    <script src="js/funciones.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
